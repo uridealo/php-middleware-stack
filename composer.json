@@ -1,5 +1,5 @@
 {
-  "name": "persist-php-example",
+  "name": "idealo/persist-php-example",
   "description": "Shamelessly stolen from idealo middleware stack by Vsevolod and Dirk",
   "keywords": [
     "stack",
