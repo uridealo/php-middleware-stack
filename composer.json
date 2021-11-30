@@ -1,6 +1,6 @@
 {
-  "name": "idealo/php-middleware-stack",
-  "description": "Implementation of HTTP Middleware PSR-15 specification",
+  "name": "idealo/persist-php-example",
+  "description": "Shameless stolen from idealo middleware stack by Vseveolod and Dirk",
   "keywords": [
     "stack",
     "psr",
