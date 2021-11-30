@@ -1,6 +1,6 @@
 {
-  "name": "idealo/persist-php-example",
-  "description": "Shameless stolen from idealo middleware stack by Vseveolod and Dirk",
+  "name": "persist-php-example",
+  "description": "Shamelessly stolen from idealo middleware stack by Vsevolod and Dirk",
   "keywords": [
     "stack",
     "psr",
