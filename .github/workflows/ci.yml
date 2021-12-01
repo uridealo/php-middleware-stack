@@ -14,17 +14,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: configure registry
-      run: |
-        cat registry/config.json > /home/runner/.composer/config.json; \
-        echo "{ \
-                \"http-basic\": { \
-                  \"artifactoryidealo.jfrog.io\": { \
-                    \"username\": \"test-ghactions-php\", \
-                    \"password\": \"${{ secrets.test_ghactions_php_pwd }}\" \
-                  } \
-                } \
-              }" | tee /home/runner/.composer/auth.json
+    #- name: configure registry
+    #  run: |
+    #    cat registry/config.json > /home/runner/.composer/config.json; \
+    #    echo "{ \
+    #            \"http-basic\": { \
+    #              \"artifactoryidealo.jfrog.io\": { \
+    #                \"username\": \"test-ghactions-php\", \
+    #                \"password\": \"${{ secrets.test_ghactions_php_pwd }}\" \
+    #              } \
+    #            } \
+    #          }" | tee /home/runner/.composer/auth.json
+
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
