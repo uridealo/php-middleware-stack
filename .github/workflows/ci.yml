@@ -33,4 +33,4 @@ jobs:
       run: |
         ls -la /home/runner/ \
         ls -la /home/runner/.composer \
-        cat /home/runner/.composer/config.json
+        cat /home/runner/.composer/.htaccess
