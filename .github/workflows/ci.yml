@@ -34,5 +34,5 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - name: log .lock
+    - name: log composer.lock
       run: cat composer.lock
