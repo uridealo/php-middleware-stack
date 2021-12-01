@@ -1,0 +1,10 @@
+{
+  "repositories": [{
+    "type": "composer",
+    "url": "https://artifactoryidealo.jfrog.io/artifactory/api/composer/php-commit-local"
+  },
+    {
+      "packagist": false
+    }
+  ]
+}

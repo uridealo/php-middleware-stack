@@ -14,6 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: configure registry
+      run: cat registry/config.json > /home/runner/.composer/config.json
+
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
@@ -28,9 +31,3 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
-
-    - name: debug
-      run: |
-        ls -la /home/runner/ \
-        ls -la /home/runner/.composer \
-        cat /home/runner/.composer/.htaccess
