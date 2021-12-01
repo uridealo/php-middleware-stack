@@ -45,7 +45,7 @@ jobs:
       run: tar --exclude='./.git' --exclude='./.idea' -zcf persist-php-example.tgz .
 
     - name: Publish
-      run: curl -utest-ghactions-php:{{ secrets.test_ghactions_php_pwd }} https://artifactoryidealo.jfrog.io/artifactory/php-commit-local/idealo/persist-php-example.tgz -T persist-php-example.tgz
+      run: curl -utest-ghactions-php:{{ secrets.test_ghactions_php_pwd }} "https://artifactoryidealo.jfrog.io/artifactory/php-commit-local/idealo/persist-php-example.tgz;composer.version=1.0.0" -T persist-php-example.tgz
 
     - name: log composer.lock
       run: cat composer.lock
