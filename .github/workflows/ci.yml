@@ -16,7 +16,7 @@ jobs:
 
     - name: configure registry
       run: |
-        cat registry/config.json > /home/runner/.composer/config.json \
+        cat registry/config.json > /home/runner/.composer/config.json; \
         cat registry/auth.json > /home/runner/.composer/auth.json
 
     - name: Validate composer.json and composer.lock
