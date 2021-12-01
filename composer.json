@@ -28,17 +28,9 @@
     "psr/http-server-middleware": "^1.0",
     "psr/http-server-handler": "^1.0"
   },
-  "require-dev": {
-    "phpunit/phpunit": "^9.5"
-  },
   "autoload": {
     "psr-4": {
       "Idealo\\Middleware\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Idealo\\Middleware\\Tests\\": "tests/"
     }
   }
 }
