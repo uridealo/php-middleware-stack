@@ -28,3 +28,10 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+
+    - name: debug
+      run: |
+        cat .composer/config.json \
+        ls -la $HOME \
+        ls -la .composer \
+        pwd
