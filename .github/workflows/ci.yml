@@ -31,7 +31,6 @@ jobs:
 
     - name: debug
       run: |
-        pwd \
-        ls -la $HOME \
-        ls -la .composer \
-        cat "$HOME/.composer/config.json"
+        ls -la /home/runner/ \
+        ls -la /home/runner/.composer \
+        cat /home/runner/.composer/config.json
