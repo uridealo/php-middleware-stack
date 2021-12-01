@@ -17,9 +17,6 @@ jobs:
     #- name: configure registry
     #  run: cat registry/config.json > /home/runner/.composer/config.json
 
-    - name: create composer.lock
-      run: php composer.phar update
-
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
@@ -34,3 +31,5 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+
+    - run: cat composer.lock
